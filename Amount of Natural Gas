@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Amount of natural gas (m3) for given amount of money (TL)
+
+int main()
+{
+float price = 0.3047;
+//unit price
+float ng;
+float ng_VAT;
+//value added tax
+float ng_amount;
+//amount of NG
+float money;
+//total cost
+
+printf("Enter amount of Money in TL\n");
+scanf("%f", &money);
+ng_VAT=(money/100)*15;
+ng = money - ng_VAT;
+ng_amount = ng/price;
+
+printf("The amount of money paid is %.2f TL\n",money);
+printf("The amount of money NG is %.2f TL\n",ng);
+printf("The amount of money NG Value Add Tax is %.2f TL\n",ng_VAT);
+printf("The amount of NG in m3 is %.3f m3\n",ng_amount);
+    return 0;
+}
