@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Converts centigrade to fahrenheit
+
+int main()
+{
+    float c;
+    float f;
+    printf("enter the centigrade degree (oC)\n");
+    scanf("%f", &c);
+    f = (c*1.8) + 32;
+    printf("Temperature is %.1f centigrade\n", c);
+    printf("-------------------------------\n");
+    printf("Temperature is %.1f fahrenheit\n", f);
+    return 0;
+}
