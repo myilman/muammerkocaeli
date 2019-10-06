@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+//second to min & hours
+//converts seconds to minute and hours
+
+int main()
+{
+    int s;
+    int m;
+    int h;
+    int hreminder;
+    int mreminder;
+    int sn;
+    printf("Enter the seconds as integer (sec) \n");
+    scanf("%d", &s);
+    hreminder = s%3600;
+    h = (s-hreminder)/3600;
+    mreminder = hreminder%60;
+    m = (hreminder - mreminder)/60;
+    sn = s - (h*3600) - (m*60);
+    printf("Total time is %d hrs %d minutes %d seconds", h,m,sn);
+    return 0;
+}
