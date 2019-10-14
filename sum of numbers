@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+//This program calculates the sum of numbers from 1 to 100
+int main()
+{
+    int x=1;
+    int total = 0;
+    printf("Sum = ");
+    while (x < 101)
+    {
+    total = total + x;
+    x = x + 1;
+    }
+    printf("%d\n", total);
+    return 0;
+}
