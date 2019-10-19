@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+//This program checks the integer is prime number or not
+int main()
+{
+    int number;
+    int counter;
+    int tester=1;
+    start:
+    printf("Enter Integer: \n");
+    scanf("%d", &number);
+    while(number>0)
+    {
+    for (counter=number-1; counter > 1 && tester==1;counter--)
+    if(number%counter==0)
+    tester=0;
+    if (tester==1)
+    printf("Number is prime\n");
+    else if (tester==0)
+    {
+    printf("Number is not prime\n");
+    printf("Largest divisor is %d \n ", counter+1);
+    }
+    tester=1;
+    goto start;
+    }
+    printf("Exit Now \n");
+    return 0;
+}
