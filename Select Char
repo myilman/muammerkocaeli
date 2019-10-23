@@ -1,0 +1,30 @@
+#include <stdio.h>
+//Karakter Secim Programı
+int main()
+{
+    char i;
+    printf("Karakter Giriniz\n");
+    scanf(" %c", &i);
+    if(i=='1'||i=='2'||i=='3'||i=='4'||i=='5'||i=='6'||i=='7'||i=='8'||i=='9'||i=='0')
+    printf("Rakam Girdiniz\n");
+else if (i=='a'||i=='A'||i=='b'||i=='B'||i=='c'||i=='C'||i=='d'||i=='D'||i=='e'||i=='E'||i=='f'||i=='F'||i=='g'||i=='G'||i=='h'||i=='H'||i=='i'||i=='I'||i=='j'||i=='J'||i=='k'||i=='K'||i=='l'||i=='L'||i=='m'||i=='M'||i=='n'||i=='N'||i=='o'||i=='O'||i=='p'||i=='P'||i=='r'||i=='R'||i=='s'||i=='S'||i=='t'||i=='T'||i=='u'||i=='U'||i=='v'||i=='V'||i=='w'||i=='W'||i=='x'||i=='X'||i=='y'||i=='Y'||i=='z'||i=='Z')
+     switch (i){
+case 'a':
+case 'A':
+case 'e':
+case 'E':
+case 'i':
+case 'I':
+case 'o':
+case 'O':
+case 'u':
+case 'U':
+    printf("Sesli Harf Girdiniz");
+    break;
+    default:
+    printf("Sessiz Harf Girdiniz");
+    }
+    else
+    printf("Ozel Karakter Girdiniz");
+    return 0;
+}
