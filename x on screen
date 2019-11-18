@@ -1,0 +1,17 @@
+#include <stdio.h>
+//This program prints x for odd numbers on screen
+int main()
+{
+    int s;
+    int i,j;
+    printf("Enter S\n");
+    scanf("%d", &s);
+    for(i=1;i<=s;i++){
+    for(j=1;j<=s;j++){
+    if(i>=j&&i+j<s+2)
+    printf("x");
+    }
+    printf("\n");
+    }
+    return 0;
+}
