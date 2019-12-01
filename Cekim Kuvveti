@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Bu program verilen 2 kütle arasındaki çekim kuvvetini hesaplar.
+    void hesap(float m1, float m2, float r){
+    float G = (6.673);
+    float G1=0.00000000001;
+    float F = ((m1*m2*G)*G1)/(r*r);
+    printf("--------------------");
+    printf("\n");
+    printf("kuvvet = %f N", F);
+    }
+int main(){
+float r1;
+float mass1,mass2;
+printf("Kutle1 = \n");
+scanf("%f", &mass1);
+printf("Kutle2 = \n");
+scanf("%f", &mass2);
+printf("Mesafe = \n");
+scanf("%f", &r1);
+hesap(mass1,mass2,r1);
+return 0;
+}
