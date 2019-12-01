@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+//Bu program girilen sayinin basamaklarının üssel toplamı ile bulunup bulunamayacağını hesaplar.
+int basamaklar(int a){
+int birler,onlar,yuzler;
+int x,y,z,b;
+int test=0;
+birler= a%10;
+onlar=((a-birler)%100)/10;
+yuzler=(a-onlar-birler)/100;
+for(x=0; x<=5; x++){
+for(y=0; y<=5; y++){
+for(z=0; z<=5; z++){
+b=pow(birler,z)+ pow(onlar,y)+pow(yuzler,x);
+if (b==a)
+test=1;
+}
+}
+}
+return test;
+}
+int main(){
+int a;
+printf("100 ile 999 arasi sayi giriniz \n");
+scanf("%d", &a);
+if(basamaklar(a)==1)
+printf("Sayi Narsist");
+else
+printf("Sayi Normal");
+return 0;
+}
